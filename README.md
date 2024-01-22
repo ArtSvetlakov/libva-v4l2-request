@@ -1,3 +1,24 @@
+## How to build on Repka-Pi 3 (or other singleboard PC with aarch64)
+
+1) install dependencies:
+`$ sudo apt install build-essential vainfo libva-dev libdrm-dev meson`
+2) Clone this repo:
+`$ git clone https://github.com/ArtSvetlakov/libva-v4l2-request.git`
+3) Do this:
+   
+	`$ cd libva-v4l2-request`
+
+	`$ meson build`
+
+	`$ cd build`
+
+	`$ meson configure -Dprefix=/usr`
+
+	`$ ninja`
+
+	`$ ninja install`
+
+--------------
 # v4l2-request libVA Backend
 
 ## About
