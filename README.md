@@ -18,6 +18,9 @@
 
 	`$ ninja install`
 
+4) Open file ~/.profile in text editor as root and add this line: export LIBVA_DRIVER_NAME=v4l2_request
+5) Reboot.
+
 --------------
 # v4l2-request libVA Backend
 
